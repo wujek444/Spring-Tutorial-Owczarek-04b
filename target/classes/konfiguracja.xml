@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mojLogger"
+		class="pl.wojcik.jakub.spring_tutorial.implementations.LoggerImpl">
+		<property name="name" value="MójLogger"/>
+		<property name="version" value="3"/>
+	</bean>
+	<bean id="repozytoriumUzytkownikow"
+		class="pl.wojcik.jakub.spring_tutorial.implementations.UsersRepositoryImpl">
+		<property name="logger" ref="mojLogger"/> <!-- odpowiednik usersRepository.setLogger(logger); -->
+	</bean>
+</beans>

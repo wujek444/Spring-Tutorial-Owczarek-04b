@@ -1,0 +1,11 @@
+Tutaj będziemy wstrzykiwać w prosty sposób wartości do beanów (komponentów).
+Możemy to osiągnąć także poprzez plik XML (konfiguracyjny) -> poprzez ustawienie properties.
+
+UWAGA!!! -> jeżeli wstrzykujemy do beana prosty atrybut -> robimy to poprzez "value"
+		 -> jeżeli wstrzykujemy do beana referencję do innego beana -> poprzez "ref"
+		 
+Własności properties przy ustawianiu wartości korzystają z setterów!!!!!!!!!
+-----! UWAGA !-------
+W XML-u tagi, które nie mają nic w środku można zamknąć />, czyli np zamiast:
+<property></property> można zapisać <property/>
+
